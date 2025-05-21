@@ -94,8 +94,8 @@ Prettier & ESLint – code formatting and quality assurance.
 
 ### 1️⃣ Clone the Repository
 
-git clone git@github.com:Yarik2019/VocabBuilder.git
-cd VocabBuilder
+git clone https://github.com/Yarik2019/Petlove.git
+cd Petlove
 
 ### 2️⃣ Install Dependencies and Run
 
