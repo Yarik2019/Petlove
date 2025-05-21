@@ -1,14 +1,26 @@
-import axios from "axios";
+import axios from 'axios';
+import { useSelector } from 'react-redux';
+import { selectToken } from '../user/selectors.js';
 
-export const aquaDevApi = axios.create({
-  baseURL: "https://aquadev-back.onrender.com",
-  // baseURL: 'http://localhost:3000',
+export const petLoveApi = axios.create({
+  baseURL: 'https://petlove.b.goit.study/api/',
   headers: {
-    "Content-Type": "application/json",
+    'Content-Type': 'application/json',
   },
-  withCredentials: true,
+  validateStatus: status => {
+    return status < 400;
+  },
 });
 
-export const setAuthHeader = (token) => {
-  aquaDevApi.defaults.headers.common.Authorization = `Bearer ${token}`;
+export const setAuthHeader = token => {
+  petLoveApi.defaults.headers.common.Authorization = `Bearer ${token}`;
 };
+
+const useAuthToken = () => {
+  const token = useSelector(selectToken);
+  if (token) {
+    setAuthHeader(token);
+  }
+};
+
+export default useAuthToken;

@@ -1,0 +1,83 @@
+.react-datepicker {
+  font-family: 'Manrope', sans-serif !important;
+  border-radius: 30px !important;
+  background-color: var(--color-text-white) !important;
+  border-color: var(--color-brand) !important;
+  width: 276px;
+  height: 284px;
+  left: 50px;
+}
+
+.react-datepicker__header {
+  background-color: var(--color-brand-light) !important;
+  width: 274px;
+  border-bottom: 1px solid var(--color-brand) !important;
+  border-radius: 30px 30px 0 0 !important;
+  padding: 12px !important;
+  top: 1px;
+}
+
+.react-datepicker__current-month {
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  color: var(--color-text-dark) !important;
+}
+
+.react-datepicker__day-name {
+  font-size: 12px;
+  font-weight: 700 !important;
+  color: var(--color-text-dark) !important;
+  margin-right: 7px;
+}
+
+.react-datepicker__day {
+  padding: 0 !important;
+  color: var(--color-text-light) !important;
+  text-align: center !important;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 14px !important;
+  border-radius: 100% !important;
+  transition: background-color 0.3s ease, transform 0.3s ease !important;
+}
+
+.react-datepicker__day:hover {
+  border-radius: 100% !important;
+  color: var(--color-text-white) !important;
+  background-color: var(--color-hover) !important;
+}
+
+.react-datepicker__day--selected {
+  background-color: var(--color-brand) !important;
+  border-radius: 100% !important;
+  color: var(--color-text-white) !important;
+}
+
+.react-datepicker__day--today {
+  background-color: var(--color-brand-light) !important;
+}
+
+.react-datepicker__day--disabled {
+  color: var(--color-disabled) !important;
+  cursor: not-allowed !important;
+}
+
+.react-datepicker__day--outside-month {
+  color: var(--color-text-gray-light) !important;
+}
+
+.react-datepicker__month {
+  padding: 0 !important;
+}
+
+.react-datepicker__navigation {
+  border-radius: 50% !important;
+  color: var(--color-text-gray-light) !important;
+  fill: var(--color-text-gray-light) !important;
+  stroke: var(--color-text-gray-light) !important;
+  top: 10px;
+}
+
+.react-datepicker__triangle {
+  border-top-color: var(--color-text-gray-light) !important;
+}

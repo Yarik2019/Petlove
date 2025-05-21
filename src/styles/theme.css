@@ -1,29 +1,26 @@
 :root {
-  --background-white: #ffffff;
-  --bg-btn-dark-gray: #323f47;
-  --bg-component-gray: #f0eff4;
-  --bg-component-green: #9be1a0;
-  --bg-component-dark-green: #87d28d;
-  --dark-gray-calendar: rgba(50, 63, 71, 0.2);
-  --text-color: #323f47;
-  --input-red: #ef5050;
-  --black: #2f2f2f;
-  --modal-backdrop: rgba(47, 47, 47, 0.6);
-  --menu-backdrop-color-light: rgba(50, 63, 71, 0.4);
-  transition: background-color 500ms ease;
-}
+  --background-page: #f9f9f9;
+  --color-brand: #f6b83d;
+  --color-brand-light: #fff4df;
+  --color-star: #ffc531;
+  --color-hover: #f9b020;
+  --color-hover-light: #fbe7c1;
 
-/* dark theme*/
-.dark {
-  --background-white: #ffffff;
-  --bg-btn-dark-gray: #323f47;
-  --bg-component-gray: #f0eff4;
-  --bg-component-green: #9be1a0;
-  --dark-gray-calendar: rgba(50, 63, 71, 0.2);
-  --text-color: #323f47;
-  --input-red: #ef5050;
-  --black: #2f2f2f;
-  --modal-backdrop: rgba(47, 47, 47, 0.6);
+  /* Text */
+  --color-text-dark: #262626;
+  --color-text-light: #2b2b2a;
+  --color-text-white: #ffffff;
+  --color-text-gray: rgba(38, 38, 38, 0.5);
+  --color-text-gray-dark: rgba(38, 38, 38, 0.6);
+  --color-text-gray-light: rgba(43, 43, 42, 0.4);
 
-  transition: background-color 500ms ease;
+  /* btn */
+  --color-border: rgba(255, 255, 255, 0.5);
+  --color-border-light: rgba(255, 255, 255, 0.15);
+  --color-disabled: rgba(38, 38, 38, 0.05);
+
+  /* Inputs */
+  --error-color: #ef2447;
+  --success-color: #08aa83;
+  --inputs-color: rgba(38, 38, 38, 0.15);
 }

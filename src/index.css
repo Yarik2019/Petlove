@@ -1,14 +1,72 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import 'modern-normalize';
+@import 'tailwindcss';
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@theme {
+  --font-display: 'Manrope', 'sans-serif';
+  --breakpoint-2xl: 1280px;
+  --color-background: var(--background-page);
+  --color-brand: var(--color-brand);
+  --color-brand-light: var(--color-brand-light);
+  --color-star: var(--color-star);
+  --color-text-dark: var(--color-text-dark);
+  --color-text-light: var(--color-text-light);
+  --color-text-white: var(--color-text-white);
+  --color-text-gray: var(--color-text-gray);
+  --color-text-gray-dark: var(--color-text-gray-dark);
+  --color-text-gray-light: var(--color-text-gray-light);
+  --color-error: var(--error-color);
+  --color-success: var(--success-color);
+  --color-inputs: var(--inputs-color);
+  --color-hover: var(--color-hover);
+  --color-hover-light: var(--color-hover-light);
+  --color-border: var(--color-border);
+  --color-border-light: var(--color-border-light);
+  --color-disabled: var(--color-disabled);
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  color: var(--color-text-dark);
+  background-color: var(--background-page);
+}
+
+button {
+  outline: none;
+}
+
+a {
+  outline: none;
+}
+
+.container {
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.noScroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 64px;
+  }
 }
