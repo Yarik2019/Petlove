@@ -1,11 +1,11 @@
-import { useState } from 'react';
-import Modal from '../Modal/Modal.jsx';
-import ModalApproveAction from '../Modal/ModalApproveAction/ModalApproveAction.jsx';
-import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
-import { logoutUser } from '../../redux/user/operations.js';
-import { logoutCleanStateNotices } from '../../redux/notices/slice.js';
-import { errToast, successfullyToast } from '../../utils/toast.js';
+import { useState } from "react";
+import Modal from "../Modal/Modal.jsx";
+import ModalApproveAction from "../Modal/ModalApproveAction/ModalApproveAction.jsx";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { logoutUser } from "../../redux/user/operations.js";
+import { logoutCleanStateNotices } from "../../redux/notices/slice.js";
+import { errToast, successfullyToast } from "../../utils/toast.js";
 
 const LogOutBtn = ({ className, onCloseMenu, isMobileMenu }) => {
   const [isOpenModal, setIsOpenModal] = useState(false);
@@ -28,8 +28,8 @@ const LogOutBtn = ({ className, onCloseMenu, isMobileMenu }) => {
       if (isMobileMenu) {
         onCloseMenu();
       }
-      navigate('/login');
-      successfullyToast('Goodbye :(');
+      navigate("/login");
+      successfullyToast("Goodbye :(");
     } catch (error) {
       errToast(error);
     }
@@ -37,14 +37,14 @@ const LogOutBtn = ({ className, onCloseMenu, isMobileMenu }) => {
 
   return (
     <>
-      <button className={className} type='button' onClick={hendleOpenModal}>
+      <button className={className} type="button" onClick={hendleOpenModal}>
         LOG OUT
       </button>
       <Modal isOpen={isOpenModal} onClose={hendleCloseModal}>
         <ModalApproveAction
           onClose={hendleCloseModal}
           approveFunction={hendleLogOut}
-          approveText={'Already leaving?'}
+          approveText={"Already leaving?"}
         />
       </Modal>
     </>
